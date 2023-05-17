@@ -1,0 +1,25 @@
+@import "assets/styles/colors";
+@import "assets/styles/laytout.scss";
+@import "assets/styles/toolbar.scss";
+@import "assets/styles/footer.scss";
+@import "assets/styles/buttons.scss";
+@import "assets/styles/cards.scss";
+@import "assets/styles/content.scss";
+
+
+h1,
+h2 {
+    color: $color-main-text;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+p {
+    color: $color-dark;
+}
