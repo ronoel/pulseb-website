@@ -1,7 +1,16 @@
-/* Footer */
 footer {
-    background-color: #424242;
-    color: #FFFFFF;
-    padding: 2rem 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eff2f7;
+    color: $color-dark;
+    padding-bottom: 60px;
+}
+
+footer .container {
+    display: block;
+}
+
+footer img {
+    max-width: 80px;
 }
