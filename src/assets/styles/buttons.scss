@@ -9,9 +9,17 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
 }
 
 .btn:hover {
     background-color: #FFA726;
+}
+
+@media screen and (max-width: 600px) {
+    .btn {
+        margin: auto;
+        border-radius: 50px;
+        width: max-content;
+    }
 }

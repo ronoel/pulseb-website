@@ -16,6 +16,7 @@
 .menu-container {
     display: flex;
     align-items: center;
+    
 }
 
 .menu-toggle {
@@ -25,6 +26,7 @@
     border: none;
     color: #fff;
     cursor: pointer;
+    background-color: red;
 }
 
 .menu-toggle.hidden {
@@ -32,7 +34,7 @@
 }
 
 .menu {
-    transition: max-height 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
 }
 
 .menu ul {
@@ -52,16 +54,33 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    .navbar{
+        height: max-content;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+    
     .menu-toggle {
         display: block;
     }
 
     .menu {
-        overflow: hidden;
+        visibility: hidden; 
         max-height: 0;
     }
 
+    .menu-container {
+        display: flex;
+        background-color: green;
+    }
+
     .menu.active {
+        opacity: 1;               
+        visibility: visible;     
+        transition: opacity 0.3s ease, visibility 0s linear; 
         max-height: 200px;
     }
 
